@@ -20,8 +20,6 @@ And your app...
 - Transforms that image into an interactive 3D model.
 - Remembers it. Forever.
 
-You're not building an app. You're building **a creative partner**.
-
 ---
 
 ## 🎯 The Mission
@@ -80,36 +78,6 @@ Simple. Elegant. Powerful.
 
 ---
 
-## 📦 Deliverables
-
-What we expect:
-
-- ✅ Fully working Python project
-- ✅ `README.md` with clear instructions
-- ✅ Prompt → Image → 3D working example
-- ✅ Logs or screenshots
-- ✅ Memory functionality (clearly explained)
-
----
-
-## 🧠 What We’re Really Testing
-
-- Your grasp of the **Openfabric SDK** (`Stub`, `Remote`, `schema`, `manifest`)
-- Your **creativity** in prompt-to-image generation
-- Your **engineering intuition** with LLMs
-- Your ability to manage **context and memory**
-- Your **attention to quality** — code, comments, and clarity
-
----
-
-## 🚀 Bonus Points
-
-- 🎨 Visual GUI with Streamlit or Gradio
-- 🔍 FAISS/ChromaDB for memory similarity
-- 🗂 Local browser to explore generated 3D assets
-- 🎤 Voice-to-text interaction
-
----
 
 ## ✨ Example Experience
 
@@ -124,42 +92,6 @@ Prompt:
 That’s not automation. That’s imagination at scale.
 
 ---
-
-## 💡 Where to start
-You’ll find the project structure set, the entrypoint is in `main.py` file.
-```python
-############################################################
-# Execution callback function
-############################################################
-def execute(model: AppModel) -> None:
-    """
-    Main execution entry point for handling a model pass.
-
-    Args:
-        model (AppModel): The model object containing request and response structures.
-    """
-
-    # Retrieve input
-    request: InputClass = model.request
-
-    # Retrieve user config
-    user_config: ConfigClass = configurations.get('super-user', None)
-    logging.info(f"{configurations}")
-
-    # Initialize the Stub with app IDs
-    app_ids = user_config.app_ids if user_config else []
-    stub = Stub(app_ids)
-
-    # ------------------------------
-    # TODO : add your magic here
-    # ------------------------------
-                                
-                                
-                                
-    # Prepare response
-    response: OutputClass = model.response
-    response.message = f"Echo: {request.prompt}"
-```
 
 Given schema, stub implementation and all the details you should be able to figure out how eventing works but as an
 extra hint (if needed) here is an example of calling and app get the value and save it as an image:
@@ -181,19 +113,3 @@ If all is fine you should be able to access the application on `http://localhost
 
 ![Swagger UI](./swagger-ui.png)
 
-## Ground Rules
-Step up with any arsenal (read: libraries or packages) you believe in, but remember:
-* 👎 External services like chatGPT are off-limits. Stand on your own.
-* 👎 Plagiarism is for the weak. Forge your own path.
-* 👎 A broken app equals failure. Non-negotiable.
-
-## This Is It
-We're not just evaluating a project; we're judging your potential to revolutionize our 
-landscape. A half-baked app won’t cut it.
-
-We're zeroing in on:
-* 👍 Exceptional documentation.
-* 👍 Code that speaks volumes.
-* 👍 Inventiveness that dazzles.
-* 👍 A problem-solving beast.
-* 👍 Unwavering adherence to the brief

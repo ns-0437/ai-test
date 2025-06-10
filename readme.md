@@ -20,8 +20,6 @@ And your app...
 - Transforms that image into an interactive 3D model.
 - Remembers it. Forever.
 
-You're not building an app. You're building **a creative partner**.
-
 ---
 
 ## 🎯 The Mission
